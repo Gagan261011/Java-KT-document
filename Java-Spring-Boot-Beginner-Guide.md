@@ -4,6 +4,98 @@ Welcome! This guide will teach you Java and Spring Boot from scratch. Think of t
 
 ---
 
+## Table of Contents
+
+1. [SECTION 1 — HOW JAVA WORKS (BIG PICTURE)](#section-1--how-java-works-big-picture)
+   - [What is Java?](#what-is-java)
+   - [What is JVM, JDK, JRE?](#what-is-jvm-jdk-jre)
+   - [What Happens When We Run a Java Program?](#what-happens-when-we-run-a-java-program)
+   - [Why Companies Use Java?](#why-companies-use-java)
+
+2. [SECTION 2 — JAVA BASICS (WITH SIMPLE CODE)](#section-2--java-basics-with-simple-code)
+   - [Variables](#variables)
+   - [Data Types](#data-types)
+   - [If / Else](#if--else)
+   - [Loops](#loops)
+   - [Methods](#methods)
+   - [Arrays](#arrays)
+
+3. [SECTION 3 — OOP (MOST IMPORTANT FOR SPRING BOOT)](#section-3--oop-most-important-for-spring-boot)
+   - [Class vs Object](#class-vs-object)
+   - [Constructor](#constructor)
+   - [Encapsulation](#encapsulation)
+   - [Inheritance](#inheritance)
+   - [Polymorphism](#polymorphism)
+   - [Abstraction](#abstraction)
+
+4. [SECTION 4 — HOW TO READ JAVA CODE (VERY IMPORTANT)](#section-4--how-to-read-java-code-very-important)
+   - [Step 1: Start with the Class Name](#step-1-start-with-the-class-name)
+   - [Step 2: Look at Fields](#step-2-look-at-fields-variables-at-the-top)
+   - [Step 3: Find the Constructor](#step-3-find-the-constructor)
+   - [Step 4: Scan Method Names](#step-4-scan-method-names)
+   - [Step 5: Pick One Method and Trace Its Flow](#step-5-pick-one-method-and-trace-its-flow)
+   - [Step 6: Follow the Data Flow](#step-6-follow-the-data-flow)
+   - [Step 7: Check for Conditionals and Loops](#step-7-check-for-conditionals-and-loops)
+
+5. [SECTION 5 — SPRING BOOT INTRODUCTION](#section-5--spring-boot-introduction)
+   - [What is Spring Boot?](#what-is-spring-boot)
+   - [Why We Need It?](#why-we-need-it)
+   - [How It Simplifies Java Apps](#how-it-simplifies-java-apps)
+   - [What is Dependency Injection?](#what-is-dependency-injection-simple-explanation)
+
+6. [SECTION 6 — BUILDING A SIMPLE SPRING BOOT API](#section-6--building-a-simple-spring-boot-api)
+   - [The Flow](#the-flow)
+   - [Entity Class](#1-entity-class-the-data-model)
+   - [Repository](#2-repository-database-access)
+   - [Service](#3-service-business-logic)
+   - [Controller](#4-controller-api-endpoints)
+   - [How They Work Together](#how-they-work-together)
+
+7. [SECTION 7 — HOW TO READ SPRING BOOT PROJECTS](#section-7--how-to-read-spring-boot-projects)
+   - [Step 1: Find the Main Class](#step-1-find-the-main-class)
+   - [Step 2: Check Project Structure](#step-2-check-project-structure)
+   - [Step 3: Read application.properties](#step-3-read-applicationproperties)
+   - [Step 4: Find the Controllers](#step-4-find-the-controllers-api-logic)
+   - [Step 5: Trace Data Flow](#step-5-trace-data-flow)
+   - [Step 6: Understand Dependencies](#step-6-understand-dependencies)
+   - [Step 7: How to Debug?](#step-7-how-to-debug)
+
+8. [SECTION 8 — HOW TO WRITE YOUR OWN CODE](#section-8--how-to-write-your-own-code)
+   - [Step 1: Understand the Problem](#step-1-understand-the-problem)
+   - [Step 2: Break It Down](#step-2-break-it-down)
+   - [Step 3: Start with Data Structure](#step-3-start-with-data-structure)
+   - [Step 4: Write the Simplest Version First](#step-4-write-the-simplest-version-first)
+   - [Step 5: Think in Layers](#step-5-think-in-layers)
+   - [Step 6: Test As You Go](#step-6-test-as-you-go)
+   - [Step 7: Handle Errors](#step-7-handle-errors)
+
+9. [SECTION 9 — HOW TO IMPROVE CODE](#section-9--how-to-improve-code)
+   - [1. Clean Code Basics](#1-clean-code-basics)
+   - [2. Naming Rules](#2-naming-rules)
+   - [3. Avoiding Repetition](#3-avoiding-repetition-dry--dont-repeat-yourself)
+   - [4. Keep Methods Short](#4-keep-methods-short)
+   - [5. Simple Refactoring Tips](#5-simple-refactoring-tips)
+   - [6. Add Helpful Comments](#6-add-helpful-comments-but-not-too-many)
+   - [7. Consistent Formatting](#7-consistent-formatting)
+
+10. [SECTION 10 — COMMON BEGINNER MISTAKES](#section-10--common-beginner-mistakes)
+    - [1. NullPointerException](#1-nullpointerexception-most-common)
+    - [2. Not Closing Resources](#2-not-closing-resources)
+    - [3. Comparing Strings with ==](#3-comparing-strings-with-)
+    - [4. Ignoring Exceptions](#4-ignoring-exceptions)
+    - [5. Not Validating Input](#5-not-validating-input)
+    - [6. Hardcoding Values](#6-hardcoding-values)
+    - [7. Creating Objects Without Understanding Scope](#7-creating-objects-without-understanding-scope)
+    - [8. Not Using Proper HTTP Status Codes](#8-not-using-proper-http-status-codes)
+    - [9. Not Understanding Optional](#9-not-understanding-optional)
+    - [10. Putting Everything in Controller](#10-putting-everything-in-controller)
+
+11. [Congratulations!](#-congratulations)
+    - [Next Steps](#next-steps)
+    - [Helpful Resources](#helpful-resources)
+
+---
+
 ## SECTION 1 — HOW JAVA WORKS (BIG PICTURE)
 
 ### What is Java?
